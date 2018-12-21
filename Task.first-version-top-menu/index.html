@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Menu</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    #next-version{
+        height: 90px; 
+        width: 90px; 
+        background: #202020;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        position: absolute; 
+        right: 25px; 
+        border-radius: 14px;
+        bottom: 25px;
+        box-shadow: -6px 6px 8px #505050;
+        transition: all 0.3s;
+    }
+    #next-version:hover{
+        transform: translateX(-4px) translateY(4px);
+        box-shadow: none;
+    }
+    #next-version a {
+        text-align: center;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+</style>
+<body>
+   <div id="next-version" style="">
+       <a href="../Task.flexbox-version-top-menu/index.html">FlexBox version</a>
+   </div>
+    <header>
+        <div class="header-top-menu">
+            <div class="top-menu-left-col">
+               <input type="checkbox" class="checkbox" id="toggle-menu">
+               <label class="left-col-burger-menu" for="toggle-menu"><i class="icon-menu"></i></label>
+                 <ul class="drop-list-item-menu">
+                    <li><i class="icon-home"></i><a href="index.html">Home</a></li>
+                    <li><i class="icon-phone"></i><a href="#">Contacts</a></li>
+                    <li><i class="icon-stats-dots"></i><a href="#">Rating</a></li>
+                    <li><i class="icon-rocket"></i><a href="#">Portfolio</a></li>
+                </ul>
+                <div class="left-col-item-menu">Test Task - Menu <i class="icon-embed"></i> <span>DashBoard</span></div>
+            </div>
+            <div class="top-menu-right-col">
+                <i class="icon-play3"></i>
+                <i class="icon-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+</body>
+</html>
